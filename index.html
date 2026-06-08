@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeTrace Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/WhatsApp Image 2026-06-07 at 18.21.14.jpeg" alt="SafeTrace Logo" class="logo">
+            <h1>SafeTrace</h1>
+        </div>
+<div class="nav-icons">
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+    </header>
+
+    <main>
+
+        <!-- Welcome Card -->
+        <section class="card">
+            <h2>Welcome Back 👋</h2>
+            <p>Monitor your child's safety in real time.</p>
+        </section>
+
+        <!-- Child Information -->
+        <section class="card">
+            <h2>David Johnson</h2>
+
+            <div class="info-row">
+                <span>Battery</span>
+                <strong>82%</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Last Seen</span>
+                <strong>2 mins ago</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Status</span>
+                <strong class="safe">Safe ✅</strong>
+            </div>
+
+            <button class="primary-btn">
+                View Live Location
+            </button>
+        </section>
+
+        <!-- Tracker Status -->
+        <section class="card">
+            <h2>Tracker Status</h2>
+
+            <div class="toggle-row">
+                <span>GPS Tracking</span>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="toggle-row">
+                <span>Safe Zone Monitoring</span>
+
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="actions">
+            <button>📍 Live Tracking</button>
+            <button>🔔 Alerts</button>
+            <button>🛡️ Geofence</button>
+        </section>
+
+    </main>
+
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+    });
+</script>
+
+
+
+</body>
+</html>
